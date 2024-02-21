@@ -1,0 +1,30 @@
+
+user-no-MacBook-Pro:~ pixy$ cd desktop
+user-no-MacBook-Pro:desktop pixy$ mkdir git_challenge
+user-no-MacBook-Pro:desktop pixy$ cd git_challenge
+user-no-MacBook-Pro:git_challenge pixy$ git init main
+Initialized empty Git repository in /Users/user/Desktop/git_challenge/main/.git/
+user-no-MacBook-Pro:git_challenge pixy$ cd main
+user-no-MacBook-Pro:main pixy$ touch "hello_world.txt"
+user-no-MacBook-Pro:main pixy$ git add .
+user-no-MacBook-Pro:main pixy$ git commit -m "１回目"
+[master (root-commit) 829b34d] １回目
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+user-no-MacBook-Pro:main pixy$ echo "こんにちは、世界！" >> hello_world.txt
+user-no-MacBook-Pro:main pixy$ git add hello_world.txt
+user-no-MacBook-Pro:main pixy$ git commit -m "日本語訳を追記"
+[master c32cf17] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+user-no-MacBook-Pro:main pixy$ git log
+commit c32cf1747d6788e916d72785843184b7ff2ca9c5 (HEAD -> master)
+Author: 14pixyz <ryo.pixy@gmail.com>
+Date:   Wed Feb 21 18:45:00 2024 +0900
+
+    日本語訳を追記
+
+commit 829b34d2f8f5c066b18301bd66dba2cfe56c51f5
+Author: 14pixyz <ryo.pixy@gmail.com>
+Date:   Wed Feb 21 18:43:07 2024 +0900
+
+    １回目
